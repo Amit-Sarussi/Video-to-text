@@ -3,7 +3,7 @@ import cv2
 import moviepy.editor
 
 frameList = []
-def getFrames(vid, output, rate=0.2, frameName='frame'):
+def getFrames(vid, output, rate=0.15, frameName='frame'):
     vidcap = cv2.VideoCapture(vid)
     clip = moviepy.editor.VideoFileClip(vid)
 

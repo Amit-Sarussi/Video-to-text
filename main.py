@@ -9,8 +9,8 @@ if __name__ == '__main__':
     x = []
     start = perf_counter()
     frames = itt(getFrames('BadApple.mp4', 'frames'))
+    end = perf_counter()
     for i in range(len(frames)):
         print(frames[i])
-        time.sleep(0.2)
-    end = perf_counter()
+        time.sleep(0.15)
     print(f'Time: {end-start} sec')
